@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <!--
+    HOTEL NAME: the property is called "Wrenmoor Inn" everywhere on this page.
+    To rename it, run ./rename.sh "New Name" (a plain find-and-replace of the
+    exact string "Wrenmoor Inn" across index.html). The name is kept as static
+    text on purpose so crawlers and capture tools read it without JavaScript.
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wrenmoor Inn | Boutique Hotel on the Sallow Point Coast</title>
+  <meta name="description" content="Wrenmoor Inn is a 14-room boutique hotel above the cove at Sallow Point, California. Garden rooms, sea-view suites and a quiet pool under the pines. Book direct for our best rate.">
+  <meta name="theme-color" content="#6b7f62">
+  <link rel="canonical" href="https://triptease-mktg.github.io/wrenmoor-inn/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wrenmoor Inn">
+  <meta property="og:title" content="Wrenmoor Inn | Boutique Hotel on the Sallow Point Coast">
+  <meta property="og:description" content="A 14-room boutique hotel above the cove at Sallow Point, California. Book direct for our best rate.">
+  <meta property="og:image" content="https://triptease-mktg.github.io/wrenmoor-inn/images/og-image.webp">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Wrenmoor Inn",
+    "description": "A 14-room boutique hotel above the cove at Sallow Point, California.",
+    "url": "https://triptease-mktg.github.io/wrenmoor-inn/",
+    "image": "https://triptease-mktg.github.io/wrenmoor-inn/images/hero.webp",
+    "logo": "https://triptease-mktg.github.io/wrenmoor-inn/favicon.svg",
+    "telephone": "+1-805-555-0142",
+    "priceRange": "$285 - $425",
+    "currenciesAccepted": "USD",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 Wrenmoor Lane",
+      "addressLocality": "Sallow Point",
+      "addressRegion": "CA",
+      "postalCode": "93400",
+      "addressCountry": "US"
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Outdoor pool", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Wrenmoor Inn home">
+        <svg class="brand-mark" width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+          <circle cx="17" cy="17" r="16" fill="none" stroke="#6b7f62" stroke-width="1.5"/>
+          <path d="M9 22c2.5-6 5-9 8-9s5.5 3 8 9" fill="none" stroke="#6b7f62" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M12 22h10" stroke="#6b7f62" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">Wrenmoor Inn</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#rooms">Rooms</a>
+        <a href="#dining">Dining</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-outline header-cta" href="#rooms">Book direct</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="images/hero.webp" alt="The pool at Wrenmoor Inn shaded by tall pines, with the sea beyond" width="1600" height="1000" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Sallow Point, California</p>
+        <h1 id="hero-title">A quiet inn above the cove</h1>
+        <p class="hero-lede">Fourteen rooms, a pool under the pines, and the Pacific at the end of the garden path. Book direct for our best available rate and a late checkout on us.</p>
+
+        <form class="booking" action="#rooms" method="get" aria-label="Check availability">
+          <div class="field">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+          <div class="field">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+          <div class="field">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Check availability</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <p class="eyebrow">About the inn</p>
+        <h2>Small on purpose</h2>
+        <p>Wrenmoor Inn sits on a low bluff at the northern edge of Sallow Point, where the coast road turns inland and the pines take over. The house was built in 1926 as a family summer home and opened as an inn in 1982. It has never grown past fourteen rooms, and we would like to keep it that way.</p>
+        <p>Days here are simple. Breakfast is served on the terrace until eleven. The pool is warm from May through October. The cove below the garden is a ten-minute walk down the switchback path, and the village, with its bakery, bookshop and Saturday market, is a fifteen-minute stroll along the headland. In the evening our small restaurant serves a short menu built around what the boats and the farms brought in that morning.</p>
+      </div>
+    </section>
+
+    <section class="rooms" id="rooms" aria-labelledby="rooms-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Rooms &amp; suites</p>
+          <h2 id="rooms-title">Three ways to stay</h2>
+          <p class="section-lede">Every room has a king or two queen beds, linen sheets, a rain shower and a window that opens. Rates include breakfast and are lowest when you book direct.</p>
+        </div>
+
+        <div class="room-grid">
+          <article class="room-card">
+            <img src="images/room-garden.webp" alt="Garden Room at Wrenmoor Inn: a white bedroom with a king bed, chandelier and doors opening onto the garden" width="1600" height="1141" loading="lazy">
+            <div class="room-body">
+              <h3>Garden Room</h3>
+              <p>A calm, light-filled room on the ground floor with French doors onto the herb garden and the pool path. King bed, walk-in rain shower.</p>
+              <ul class="room-meta">
+                <li>King bed</li>
+                <li>320 sq ft</li>
+                <li>Sleeps 2</li>
+              </ul>
+              <div class="room-foot">
+                <p class="price"><span class="price-from">from</span> <span class="price-amount">$285</span> <span class="price-unit">/ night</span></p>
+                <a class="btn btn-primary" href="#rooms">Book direct</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <img src="images/room-loft.webp" alt="Pine Loft at Wrenmoor Inn: a bright bedroom with pale wood floors, a low bed and plants on white shelves" width="1600" height="1068" loading="lazy">
+            <div class="room-body">
+              <h3>Pine Loft</h3>
+              <p>Under the eaves on the top floor, with sloping ceilings, pale oak floors and a window seat looking into the treetops. Queen bed, deep soaking tub.</p>
+              <ul class="room-meta">
+                <li>Queen bed</li>
+                <li>380 sq ft</li>
+                <li>Sleeps 2</li>
+              </ul>
+              <div class="room-foot">
+                <p class="price"><span class="price-from">from</span> <span class="price-amount">$340</span> <span class="price-unit">/ night</span></p>
+                <a class="btn btn-primary" href="#rooms">Book direct</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card">
+            <img src="images/room-bay.webp" alt="Cove Suite at Wrenmoor Inn: a corner bedroom with a wide bay window and a sitting area" width="1600" height="1067" loading="lazy">
+            <div class="room-body">
+              <h3>Cove Suite</h3>
+              <p>Our largest room, on the sea-facing corner of the house. A bay window over the cove, a separate sitting area and a private terrace for breakfast.</p>
+              <ul class="room-meta">
+                <li>King bed</li>
+                <li>560 sq ft</li>
+                <li>Sleeps 3</li>
+              </ul>
+              <div class="room-foot">
+                <p class="price"><span class="price-from">from</span> <span class="price-amount">$425</span> <span class="price-unit">/ night</span></p>
+                <a class="btn btn-primary" href="#rooms">Book direct</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Wrenmoor Inn</p>
+        <p id="location">1 Wrenmoor Lane, Sallow Point, CA 93400</p>
+      </div>
+      <div>
+        <p id="dining">Restaurant open nightly, 6 to 9:30 pm</p>
+        <p><a href="tel:+18055550142">(805) 555-0142</a> &middot; <a href="mailto:stay@wrenmoorinn.example">stay@wrenmoorinn.example</a></p>
+      </div>
+      <p class="footer-legal">&copy; 2026 Wrenmoor Inn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Default the booking widget to a stay two weeks out, three nights long.
+    (function () {
+      var fmt = function (d) { return d.toISOString().slice(0, 10); };
+      var a = new Date(); a.setDate(a.getDate() + 14);
+      var b = new Date(a); b.setDate(b.getDate() + 3);
+      document.getElementById('checkin').value = fmt(a);
+      document.getElementById('checkout').value = fmt(b);
+    })();
+  </script>
+</body>
+</html>
