@@ -365,7 +365,7 @@ p { margin: 0 0 1em; }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
 
 /* Responsive */
-@media (max-width: 960px) {
+@media (max-width: 720px) {
   .room-grid { grid-template-columns: 1fr 1fr; }
   .booking { grid-template-columns: 1fr 1fr; }
   .booking .btn { grid-column: 1 / -1; }
